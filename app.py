@@ -3,6 +3,22 @@ import pandas as pd
 import random
 import math
 
+'''
+Things to add:
+- make this a discord bot
+    - add custom point values
+    - form vs reaction inputs
+    - add randomize team orders
+    - add reshuffle
+    - output who gets excluded
+    - be able to remove/add players easily
+    - add tutorial
+    - add an update system
+    - differentiate from players on tierlist vs new
+
+
+'''
+
 SPLUS = 16
 S = 14
 APLUS = 10
@@ -12,8 +28,8 @@ C = 2
 D = 1
 
 # parse tier list data
-file_path = "gg.csv"
-file2 = "test1.txt"
+file_path = "gg2.csv"
+file2 = "test3.txt"
 
 df = pd.read_csv(file_path)
 df.dropna(axis=1, how='all', inplace=True)
